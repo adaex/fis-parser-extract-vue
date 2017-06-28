@@ -1,0 +1,17 @@
+{
+  "name": "fis-parser-extract-vue",
+  "version": "0.0.1",
+  "description": "extract the vue file",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spryti/fis-parser-extract-vue.git"
+  },
+  "keywords": [
+    "fis",
+    "extract the vue"
+  ],
+  "author": "yangtao",
+  "license": "MIT",
+  "homepage": "https://github.com/spryti/fis-parser-extract-vue"
+}
