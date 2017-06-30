@@ -1,6 +1,6 @@
 {
   "name": "fis-parser-extract-vue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "extract the vue file",
   "main": "index.js",
   "repository": {

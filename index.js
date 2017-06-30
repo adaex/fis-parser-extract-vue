@@ -8,7 +8,9 @@ module.exports = function (content, file, options) {
         .replace(/["']![^'"\s]+["']/g, function (str) {
             return str.replace('.js', '').replace('!this', this_id);
         })
-        .replace(/<(style|template).*?data-name=["'](.*?)["'].*?>([\s\S]*?)<\/(style|template)>/g, function (str, type, name, value) {
+        .replace(/<script.*?data-name=["'](.*?)["'].*?>([\s\S]*?)<\/script>/g, function (str, name, value) {
+            if (name.match(/\.js$/))
+                return value;
             name = file.realpathNoExt + name.replace('this', '');
             var f = fis.file.wrap(name);
             f.cache = file.cache;
